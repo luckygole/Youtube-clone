@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background: rgba(0, 0, 0, 0.968);
+    color: white;
+} */
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 350px;
+    position: fixed;
+    width: 30px;
+    left: 20px;
+    top: 20px;
+    
+}
+#sidebar svg{
+   /* position: absolute; */
+   margin-top: 5px;
+   padding-top: 10px;
+}
+#sidebar .icon{
+    margin-top: 30px;
+}
+#sidebar .icon:hover{
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.138);
+}
+#sidebar button{
+    border: none;
+    color: black;
+    height: 30px;
+    width: 30px;
+}
+#sidebar h5{
+    position: absolute;
+}
+
+
+#topbar{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    position: absolute;
+}
+#topbar input{
+    margin-left: 280px;
+    width: 570px;
+    border-radius:50px ;
+    border: 2px solid black;
+    
+}
+#topbar  ::placeholder{
+    padding-left: 20px;
+    font-size: 15px;
+    color: black;
+}
+#topbar :nth-child(2){
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid black;
+    width: 70px;
+    height: 40px;
+    padding-left: 25px;
+    padding-top: 10px;
+    position:absolute;
+    left: 820px;
+    background-color: rgba(0, 0, 0, 0.906);
+    color: white;
+}
+#topbar :nth-child(3){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.546);
+    font-size: 20px;
+    margin-left: 70px;
+    color:white;
+    padding-left: 12px;
+    padding-top: 9px;
+}
+#topbar :nth-child(4){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    /* background-color: rgba(0, 0, 0, 0.546); */
+    font-size: 25px;
+    color: black;
+    padding-left: 10px;
+    padding-top: 9px;
+    margin-left: 90px;
+}
+#topbar :nth-child(5){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    /* background-color: rgba(0, 0, 0, 0.546); */
+    font-size: 25px;
+    color: black;
+    padding-left: 12px;
+    padding-top: 9px;
+    margin-left: 15px;
+}
+#topbar :nth-child(6){
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+}
+#youtubelogo img{
+    position: absolute;
+    height: 25px;
+    mix-blend-mode: color;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+#topbutton button{
+    top: 50px;
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    /* border: 2px solid rgba(0, 0, 0, 0.653); */
+    /* background-color: rgba(0, 0, 0, 0.692);
+    color: white; */
+}
+#topbutton{
+    width: 1200px;
+    padding-left: 10px;
+    height: 50px;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.music{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        padding: 30px 20px; 
+        grid-column-gap: 20px;
+        grid-row-gap: 50px;
+        position: absolute;
+        margin-top: 110px;
+        margin-left: 110px;
+        cursor: pointer;
+}
+.music .music1{
+    height: 270px;
+    width: 340px;  
+    cursor: pointer;
+}
+.music .music1 :nth-child(2){
+    height: 200px;
+    width: 340px;
+    border-radius:10px ;
+}
+.music .music1 :nth-child(1){
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    margin-top: 210px; 
+}
+.music .music1 a{
+    color: white;
+    font-size: 20px;
+    position:relative;
+}
+.music .music1 :nth-child(1){
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    margin-top: 210px; 
+}
+.music .music1 #video video{
+    height: 200px;
+    width: 340px;
+    border-radius:10px ;
+    bottom: 101px;
+
+}
+.music .music1 h2{
+    font-size: 15px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.793);
+    /* color: white; */
+}
+.music .music1 h4{
+    font-size: 10px;
+    position: relative; 
+    margin-left: 35px;
+    
+    margin-top: 70px;
+    color: rgba(0, 0, 0, 0.639);
+    /* color: white; */
+}
+@media screen and (max-width:1000px){
+    .music{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #topbutton{
+        width: 400px;
+    }
+    #topbar{
+        width: 200px;
+    }
+    #topbar input{
+        width: 100px;
+    }
+}
+/* @media screen and (max-width:768px){
+    .music{
+        grid-template-columns: repeat(1,1fr);
+    }
+} */

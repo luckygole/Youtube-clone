@@ -1,0 +1,770 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(24, 24, 24);
+    background-color: rgb(10, 10, 10);
+
+    
+    
+}
+#menu{
+    color: rgb(165, 164, 164);
+    z-index: 10;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 25px;
+    font-size: 22px;
+}
+#top{
+    width: 100%;
+    height: 60px;
+    /* border: 2px solid black; */
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgb(25, 25, 25);
+    /* background-color: aliceblue; */
+}
+
+#topbar{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    position: fixed;
+    
+}
+#topbar input{
+    margin-left: 280px;
+    width: 570px;
+    border-radius:50px ;
+    border: 1px solid rgba(255, 255, 255, 0.361);
+    background-color: rgb(22, 22, 22);
+    
+}
+#topbar  ::placeholder{
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+    color: rgb(155, 152, 152);
+
+    /* background-color: black; */
+    
+}
+#topbar :nth-child(2){
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.325);
+    width: 60px;
+    height: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
+    position:absolute;
+    left: 820px;
+    /* background-color: rgba(0, 0, 0, 0.906); */
+    background-color: rgb(37, 36, 36);
+
+    color: white;
+}
+#topbar :nth-child(3){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    background-color: rgb(37, 36, 36);
+    
+    font-size: 19px;
+    margin-left: 60px;
+    color:white;
+    padding-left: 13px;
+    padding-top: 9px;
+    /* border: 1px solid rgba(255, 255, 255, 0.399); */
+}
+#topbar :nth-child(4){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    /* background-color: rgba(0, 0, 0, 0.546); */
+    font-size: 22px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 9px;
+    margin-left: 80px;
+}
+#topbar :nth-child(5){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    /* background-color: rgba(0, 0, 0, 0.546); */
+    font-size: 22px;
+    color: white;
+    padding-left: 12px;
+    padding-top: 9px;
+    margin-left: 10px;
+}
+#topbar :nth-child(6){
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+}
+#youtubelogo img{
+    position: absolute;
+    height: 30px;
+    mix-blend-mode:exclusion;
+    margin-left: 80px;
+    margin-top: 13px;
+    /* z-index: 10; */
+    /* mix-blend-mode:color-burn; */
+   
+}
+#youtubelogo{
+    /* z-index: 10; */
+    color: white;
+    background-color: #fff;
+    
+}
+#mainvideo video{
+    height: 500px;
+    margin-top: 60px;
+    width: 100%;
+    background-color: black;
+}
+#sideleft{
+    width: 60%;
+    
+    height: 1000px;
+    /* border: 2px solid white;  */
+    position: absolute;
+    background-color: rgb(10, 10, 10);
+    
+}
+#sideleft h1{
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+}
+#sideleft #subscribe img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+   margin-top: 10px;
+}
+#subscribe{
+    display: flex;
+}
+#subscribe :nth-child(2){
+    font-size: 13px;
+    padding-top: 13px;
+    padding-left: 12px;
+}
+#subscribe :nth-child(3){
+    font-size: 10px;
+    color: rgb(156, 154, 154);
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 75px;
+}
+#subscribe :nth-child(4){
+    border-radius: 20px;
+    margin-left: 40px;
+    height: 35px;
+    width: 140px;
+    border: none;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    
+}
+#subscribe :nth-child(5){
+    border-radius: 20px;
+    margin-left: 450px;
+    height: 35px;
+    width: 110px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    
+    color: white;
+    font-size: 16px;
+    position: absolute;
+}
+#subscribe i{
+    border: none;
+    color: rgb(244, 243, 243);
+}
+#subscribe :nth-child(6){
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 540px;
+    height: 35px;
+    width: 40px;
+    border: none;
+    margin-top: 10px;
+    padding-right: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 16px;
+    position: absolute;
+}
+#subscribe :nth-child(7){
+    border-radius: 20px;
+    margin-left:200px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 16px;
+}
+#subscribe :nth-child(8){
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    margin-top: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-size: 16px;
+}
+#sideleft #caption{
+    height: 100px;
+    width: 690px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+#sideleft h2{
+    font-size: 24px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#sideleft #cmt{
+    display: flex;
+}
+#sideleft #cmt img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#sideleft #cmt h3{
+    color: rgb(192, 188, 188);
+    margin-left: 82px;
+    position: absolute;
+    margin-top: 25px; 
+}
+#sideleft #cmt div{
+    border: 1px solid rgb(74, 74, 74);
+    width: 600px;
+    height: 2px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.user{
+    display: flex;
+    margin-top: 20px;
+}
+.user :nth-child(1){
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.user :nth-child(2){
+    color: white;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 40px;
+    font-size: 15px;
+
+}
+.user :nth-child(3){
+    color: rgb(137, 134, 134);
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 43px;
+    font-size: 14px;
+}
+.user :nth-child(4){
+    margin-top: 70px;
+    color: white;
+    margin-left: 20px;
+}
+.user span{
+    color: white;
+    margin-top: 60px;
+    margin-left: 60px;
+    position: absolute;
+}
+.user :nth-child(6){
+    color: white;
+    margin-left: 130px;
+    position: absolute;
+    margin-top: 61px;
+}
+
+
+
+.sideright{
+    height: 1000px;
+    width: 40%;
+    margin-left: 60%;
+    margin-top: 5px;
+    background-color: rgb(10, 10, 10);
+    /* display: flex;
+    flex-direction: column; */
+    /* position: relative; */
+    /* border: 2px solid black; */
+
+}
+#topbutton button{
+    top: 50px;
+    height: 30px;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    background-color: rgb(49, 48, 48);
+    color:white;
+}
+#topbutton button:hover{
+    color: black;
+    background-color: white;
+}
+#topbutton button:nth-child(1){
+    background-color: #fff;
+    color: black;
+}
+.sideright .music{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 10px;
+}
+.sideright .music:hover{
+    background-color: rgb(24, 24, 24);
+   border-radius: 15px;
+}
+.sideright .music1:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music2:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music3:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music4:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music5:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music6:hover{
+    background-color: rgb(24, 24, 24);
+    border-radius: 15px;
+   
+}
+.sideright .music img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.642);
+}
+.sideright .music h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+
+}
+.sideright .music1{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 140px;
+    /* background-color: rgb(24, 24, 24); */
+
+}
+.sideright .music1 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music1 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music1 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+
+}
+.sideright .music1 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    color: rgba(222, 218, 218, 0.636);
+    margin-left:185px ;
+}
+.sideright .music2{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 270px;
+    /* background-color: rgb(24, 24, 24); */
+}
+.sideright .music2 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music2 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music2 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+
+}
+.sideright .music2 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    color: rgba(222, 218, 218, 0.636);
+    margin-left:185px ;
+}
+.sideright .music3{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 400px;
+    /* background-color: rgb(24, 24, 24); */
+}
+.sideright .music3 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music3 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music3 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+
+}
+.sideright .music3 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music4{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 530px;
+    /* background-color: rgb(24, 24, 24); */
+}
+.sideright .music4 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music4 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music4 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music4 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music5{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 660px;
+    /* background-color: rgb(24, 24, 24); */
+}
+.sideright .music5 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music5 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music5 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music5 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music6{
+    height: 120px;
+    width: 420px;
+    position: absolute;
+    margin-top: 790px;
+    /* background-color: rgb(24, 24, 24); */
+}
+.sideright .music6 img{
+    height: 110px;
+    width: 180px;
+    border-radius: 10px;
+    top: 5px;
+    position: absolute;
+}
+.sideright .music6 h1{
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    margin-left:185px ;
+    color: white;
+}
+.sideright .music6 h5{
+    position: absolute;
+    top: 54px;
+    font-size: 12px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+}
+.sideright .music6 h6{
+    position: absolute;
+    top: 70px;
+    font-size: 10px;
+    margin-left:185px ;
+    color: rgba(222, 218, 218, 0.636);
+
+}
+
+@media screen and (max-width:1000px){
+    #top{
+        width: 1000px;
+    }
+    #topbar input{
+        width: 100px;
+        margin-left: 200px;
+    }
+    #topbar :nth-child(3){
+        margin-left: 10px;
+    }
+    #topbar :nth-child(2){
+        margin-left: 100px;
+    }
+    #youtubelogo{
+        margin-left: 0px;
+    }
+    #mainvideo video{
+        width: 600px;
+        height: 400px;
+        margin-top: 30px;
+    }
+    #sideleft{
+        width: 100%;
+    }
+    .sideright{
+        width: 100%;
+        margin-top: 280px;
+        position: absolute;
+        margin-left: 50px;
+    }
+    #topbutton button{
+        width: auto;
+    }
+    .sideright .music{
+        width: 500px;
+    }
+    .sideright .music1{
+        width: 500px;
+    }
+    .sideright .music2{
+        width: 500px;
+    }
+    .sideright .music3{
+        width: 500px;
+    }
+    .sideright .music4{
+        width: 500px;
+    }
+    .sideright .music5{
+        width: 500px;
+    }
+    .sideright .music6{
+        width: 500px;
+    }
+    .sideright .music h5{
+        top: 40px;
+    }
+    .sideright .music h6{
+        top: 55px;
+    }
+    .sideright .music2 h5{
+        top: 40px;
+    }
+    .sideright .music2 h6{
+        top: 55px;
+    }
+    .sideright .music3 h5{
+        top: 40px;
+    }
+    .sideright .music3 h6{
+        top: 55px;
+    }
+    .sideright .music4 h5{
+        top: 40px;
+    }
+    .sideright .music4 h6{
+        top: 55px;
+    }
+    h2{
+        display: none;
+    }
+    #sideleft #cmt{
+        display: none;
+    }
+    .user{
+        display: none;
+    }
+    #sideleft #subscribe :nth-child(4){
+        margin-left: 10px;
+        width: 140px;
+    }
+    #sideleft #subscribe :nth-child(5){
+        margin-left: 330px;
+    }
+    #sideleft #subscribe :nth-child(6){
+        margin-left: 420px;
+    }
+    #sideleft #subscribe :nth-child(7){
+        margin-left: 155px;
+    }
+    #sideleft #subscribe :nth-child(3){
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+    #sideleft #subscribe :nth-child(2){
+        font-size: 10px;
+
+    }
+    #sideleft #subscribe :nth-child(1){
+        margin-left: 10px;
+    }
+    #sideleft #caption{
+        width: 560px;
+        position: absolute;
+    }
+
+}
+@media screen and (max-width:768px){
+    .items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
